@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import { Search } from './components/Search';
+import { Pagination } from './components/Pagination';
+import { Stories } from './components/Stories';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-[#6a94f0] h-[100%]'>
+      <div className="">
+        <Search />
+        <Pagination />
+        <Stories />
+      </div>
     </div>
   );
 }
